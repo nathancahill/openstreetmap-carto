@@ -1,3 +1,8 @@
+
+@text-size-8: 8;
+@text-size-9: 9;
+@text-size-11: 11;
+
 #interpolation {
   [zoom >= 17] {
     line-color: #888;
@@ -14,7 +19,7 @@
     text-wrap-width: 0;
     text-face-name: @book-fonts;
     text-fill: #666;
-    text-size: 9;
+    text-size: @text-size-9;
   }
 }
 
@@ -24,10 +29,10 @@
     text-placement: interior;
     text-wrap-width: 20;
     text-face-name: @book-fonts;
-    text-size: 8;
+    text-size: @text-size-8;
     text-fill: #666;
     [zoom >= 18] {
-      text-size: 9;
+      text-size: @text-size-9;
     }
   }
 }
@@ -36,7 +41,7 @@
   [zoom >= 14][way_pixels > 3000],
   [zoom >= 17] {
     text-name: "[name]";
-    text-size: 11;
+    text-size: @text-size-11;
     text-fill: #444;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
